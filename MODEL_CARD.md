@@ -1,0 +1,5 @@
+# GeneScope AI | model card
+
+Version 2. Intended for exploratory analysis of compatible yeast expression profiles only. Not a diagnostic or causal model.
+
+The bundle contains Isolation Forest, novelty LOF, PCA reconstruction, two StandardScalers, empirical calibration scores, and a descriptive PCA embedding. Training/calibration/test: 2628/657/1096 genes, seed 42. The fixed threshold is 95 on empirical ranks; the ensemble averages three ranks. No neural models are implemented. See metrics.json for the exact synthetic benchmark and per-perturbation results. The best aggregate ROC-AUC belongs to PCA reconstruction; the ensemble is retained for comparison. Models are fitted only on the training partition; the descriptive 3D PCA is fitted on all genes. Original test profiles are proxy negatives, not confirmed normals. No independent biological validation or uncertainty intervals. Input shifts and correlated genes limit generalization. The saved bundle is version-dependent and must be loaded only from trusted sources. Redistribution rights remain unverified.

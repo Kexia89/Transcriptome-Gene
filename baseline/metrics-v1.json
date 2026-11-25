@@ -1,0 +1,105 @@
+{
+  "seed": 42,
+  "input_sha256": "3dc40c01d0c946f8f1d9d077e5fd6fe77d42f060f2cf669f4870f36248207ab5",
+  "genes": 4381,
+  "timepoints": 23,
+  "missing": 0,
+  "embedding": "PCA",
+  "pca_variance_ratio": [
+    0.2900529339388045,
+    0.1542172210016911,
+    0.1398666446424211
+  ],
+  "trustworthiness_10": 0.8893418391194826,
+  "network": {
+    "edges": 17977,
+    "isolates": 877,
+    "communities": 78,
+    "density": 0.0018736991095838298,
+    "modularity": 0.6375158475250358,
+    "threshold": 0.8,
+    "top_k_union": 10,
+    "block_deletion_stability": [
+      {
+        "removed_columns": [
+          40,
+          50,
+          60
+        ],
+        "edge_jaccard": 0.4372311150730592,
+        "community_ari_shared_nonisolates": 0.3206226795816271,
+        "shared_nonisolates": 3378
+      },
+      {
+        "removed_columns": [
+          110,
+          120,
+          130
+        ],
+        "edge_jaccard": 0.5090752620873102,
+        "community_ari_shared_nonisolates": 0.3370125715867144,
+        "shared_nonisolates": 3458
+      },
+      {
+        "removed_columns": [
+          180,
+          190,
+          200
+        ],
+        "edge_jaccard": 0.40660080031162577,
+        "community_ari_shared_nonisolates": 0.38513969717521046,
+        "shared_nonisolates": 3457
+      },
+      {
+        "removed_columns": [
+          240,
+          250,
+          260
+        ],
+        "edge_jaccard": 0.39761066586772525,
+        "community_ari_shared_nonisolates": 0.2793605483908419,
+        "shared_nonisolates": 3346
+      }
+    ]
+  },
+  "synthetic_holdout": {
+    "isolation_forest": {
+      "pr_auc_average_precision": 0.8126836379640161,
+      "roc_auc": 0.7855922665032766,
+      "f1_at_95": 0.5529486366518707
+    },
+    "lof": {
+      "pr_auc_average_precision": 0.8781435258450715,
+      "roc_auc": 0.8360224139538601,
+      "f1_at_95": 0.7456709956709957
+    },
+    "pca_error": {
+      "pr_auc_average_precision": 0.9477321850725284,
+      "roc_auc": 0.9470024541797646,
+      "f1_at_95": 0.7957894736842105
+    },
+    "ensemble": {
+      "pr_auc_average_precision": 0.9002976638387041,
+      "roc_auc": 0.8833973240449677,
+      "f1_at_95": 0.6984866123399301
+    }
+  },
+  "anomaly_score_rank_correlations": [
+    [
+      0.9999999999999998,
+      0.5840694906929623,
+      0.1911857923482493
+    ],
+    [
+      0.5840694906929623,
+      1.0,
+      0.22897149398862565
+    ],
+    [
+      0.1911857923482493,
+      0.22897149398862565,
+      1.0
+    ]
+  ],
+  "flagged_at_95": 93
+}
